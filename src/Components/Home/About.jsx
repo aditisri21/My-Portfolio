@@ -26,9 +26,9 @@ const About = () => {
 
           {/* Main Title */}
           <h2
-            className="text-4xl md:text-5xl text-white leading-tight"
-            style={{ fontFamily: "Caveat" }}
-          >
+  className="text-4xl md:text-5xl text-white leading-[1.4] tracking-wide "
+  style={{ fontFamily: "Kalam" }}
+>
             I design experiences that are
             <br />
             <span className="text-fuchsia-400">intuitive</span>,
@@ -71,7 +71,7 @@ const About = () => {
                 className="text-5xl text-white"
                 style={{ fontFamily: "Caveat" }}
               >
-                1yr+
+                2yr+
               </h3>
               <p className="text-xs text-gray-400 uppercase mt-2">
                 Years Experience
