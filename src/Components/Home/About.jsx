@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImg from "../../assets/image1.svg";
+import profileImg from "../../assets/aditip.png";
 
 const About = () => {
   return (
@@ -56,11 +56,12 @@ const About = () => {
           <div className="flex gap-12 mt-12">
             <div>
               <h3
-                className="text-5xl text-white"
-                style={{ fontFamily: "Caveat" }}
-              >
-                10+
-              </h3>
+  className="text-5xl text-white"
+  style={{ fontFamily: "Caveat" }}
+>
+
+  10+
+</h3>
               <p className="text-xs text-gray-400 uppercase mt-2">
                 Projects Completed
               </p>
@@ -68,11 +69,11 @@ const About = () => {
 
             <div>
               <h3
-                className="text-5xl text-white"
-                style={{ fontFamily: "Caveat" }}
-              >
-                2yr+
-              </h3>
+  className="text-5xl text-white"
+  style={{ fontFamily: "Caveat" }}
+>
+  2+
+</h3>
               <p className="text-xs text-gray-400 uppercase mt-2">
                 Years Experience
               </p>
@@ -80,11 +81,11 @@ const About = () => {
 
             <div>
               <h3
-                className="text-5xl text-white"
-                style={{ fontFamily: "Caveat" }}
-              >
-                7+
-              </h3>
+  className="text-5xl text-white"
+  style={{ fontFamily: "Caveat" }}
+>
+  7+
+</h3>
               <p className="text-xs text-gray-400 uppercase mt-2">
                 Client Served
               </p>
@@ -92,26 +93,43 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Right Image */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex justify-center"
-        >
-          <div className="relative">
-            
-            {/* Glow Ring */}
-            <div className="absolute inset-0 rounded-full bg-fuchsia-500 blur-2xl opacity-40 scale-110"></div>
+{/* Right Image */}
+<motion.div
+  initial={{ opacity: 0, x: 60 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="flex justify-center items-center"
+>
+  <motion.div
+    whileHover={{ scale: 1.03 }}
+    transition={{ duration: 0.4 }}
+    className="relative"
+  >
+    {/* Animated Glow */}
+    <motion.div
+      animate={{
+        opacity: [0.4, 0.8, 0.4],
+        scale: [1, 1.08, 1],
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+      className="absolute -inset-8 bg-fuchsia-500/30 blur-[90px] rounded-[50px]"
+    />
 
-            <img
-              src={profileImg}
-              alt="Aditi"
-              className="relative w-[350px] md:w-[420px]"
-            />
-          </div>
-        </motion.div>
+    {/* Image Card */}
+    <div className="relative rounded-[32px] overflow-hidden border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
+      <img
+        src={profileImg}
+        alt="Aditi"
+        className="w-[280px] md:w-[330px] block"
+      />
+    </div>
+  </motion.div>
+</motion.div>
 
       </div>
     </section>
