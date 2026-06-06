@@ -31,7 +31,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("UI/UX Design");
 
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center">
@@ -72,25 +72,24 @@ const Projects = () => {
 
         {/* UI/UX Design */}
         {activeTab === "UI/UX Design" && (
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16">
             {["UPHIREX", "PORTFOLIO", "MY EXPENSES"].map((title) => (
               <motion.div
                 key={title}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="border border-fuchsia-500/60 rounded-3xl p-5 bg-white/[0.02]"
+                className="border border-fuchsia-500/60 rounded-3xl p-4 md:p-5 bg-white/[0.02]"
               >
-                <div className="bg-gray-300 rounded-xl h-64"></div>
+                <div className="bg-gray-300 rounded-xl h-44 sm:h-52 md:h-64"></div>
 
                 <div className="mt-6 text-center">
-                  <h3 className="text-xl font-bold text-white">{title}</h3>
-
+                 <h3 className="text-lg md:text-xl font-bold text-white">
                   <p className="text-gray-400 mt-4 text-sm">
                     UI/UX design project showcasing modern design principles.
                   </p>
 
                   <button
-                    className="mt-6 px-6 py-2 rounded-full
+                    className="mt-6 px-5 md:px-6 py-2 rounded-full
                     bg-gradient-to-r from-fuchsia-500 to-pink-500
                     text-white text-sm"
                   >
