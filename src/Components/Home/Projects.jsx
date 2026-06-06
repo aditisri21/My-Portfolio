@@ -35,7 +35,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
             My Recent{" "}
             <span
               className="text-fuchsia-400"
@@ -45,20 +45,20 @@ const Projects = () => {
             </span>
           </h2>
 
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto px-4 text-sm md:text-base leading-relaxed">
             Exploring ideas through design and development to create
             user-friendly digital experiences.
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center mt-12">
-          <div className="border border-fuchsia-500 rounded-full p-2 flex flex-wrap gap-2">
+        <div className="flex justify-center mt-12 px-2">
+          <div className="border border-fuchsia-500 rounded-2xl md:rounded-full p-2 flex flex-wrap justify-center gap-2 max-w-full">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                   activeTab === tab
                     ? "bg-white text-black"
                     : "text-white hover:text-fuchsia-400"
@@ -104,7 +104,7 @@ const Projects = () => {
 
         {/* Frontend Development */}
         {activeTab === "Frontend Development" && (
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mt-16">
             {projectsData["Frontend Development"].map((project, index) => (
               <motion.div
                 key={project.title}
@@ -158,8 +158,8 @@ const Projects = () => {
 
         {/* Graphic Design */}
         {activeTab === "Graphic Design" && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-            <div className="col-span-2 h-52 rounded-xl bg-gradient-to-br from-pink-300 to-fuchsia-500 border border-fuchsia-500/40 hover:shadow-[0_0_30px_rgba(217,70,239,0.8)] hover:scale-[1.03] transition-all duration-500 cursor-pointer"></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+            <div className="sm:col-span-2 h-52 rounded-xl bg-gradient-to-br from-pink-300 to-fuchsia-500 border border-fuchsia-500/40 hover:shadow-[0_0_30px_rgba(217,70,239,0.8)] hover:scale-[1.03] transition-all duration-500 cursor-pointer"></div>
 
             <div className="h-52 rounded-xl bg-gradient-to-br from-violet-300 to-purple-500 border border-fuchsia-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] hover:scale-[1.03] transition-all duration-500 cursor-pointer"></div>
 
@@ -175,7 +175,7 @@ const Projects = () => {
 
         {/* UI Redesigns */}
         {activeTab === "UI Redesigns" && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-16">
             <div className="h-64 rounded-xl bg-gradient-to-br from-fuchsia-300 to-pink-500 border border-fuchsia-500/40 hover:shadow-[0_0_30px_rgba(217,70,239,0.8)] transition-all duration-500"></div>
 
             <div className="h-64 rounded-xl bg-gradient-to-br from-blue-300 to-cyan-500 border border-fuchsia-500/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.8)] transition-all duration-500"></div>

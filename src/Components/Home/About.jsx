@@ -30,7 +30,6 @@ const About = () => {
   style={{ fontFamily: "Kalam" }}
 >
             I design experiences that are
-            <br />
             <span className="text-fuchsia-400">intuitive</span>,
             functional &{" "}
             <span className="text-fuchsia-400">human.</span>
