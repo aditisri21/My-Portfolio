@@ -27,7 +27,7 @@ const skillsData = [
     title: "Tools & Other",
     watermark: "TOOLS",
     skills: [
-      "Git",
+      "Antigravity",
       "GitHub",
       "VS Code",
       "Canva",
