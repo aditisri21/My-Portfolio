@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import u1 from "../../assets/Ui/u1.png";
+import u2 from "../../assets/Ui/u2.png";
+import u3 from "../../assets/Ui/u3.png";
+
 import g1 from "../../assets/Graphic/g1.png";
 import g2 from "../../assets/Graphic/g2.png";
 import g3 from "../../assets/Graphic/g3.png";
@@ -104,7 +108,7 @@ const Projects = () => {
       "
     >
       <img
-        src={uishow1}
+        src={u1}
         alt="UPHIREX"
         className="w-full h-64 object-cover rounded-xl"
       />
@@ -149,7 +153,7 @@ const Projects = () => {
       "
     >
       <img
-        src={uishow2}
+        src={u2}
         alt="Portfolio"
         className="w-full h-64 object-cover rounded-xl"
       />
@@ -193,7 +197,7 @@ const Projects = () => {
       "
     >
       <img
-        src={uishow3}
+        src={u3}
         alt="My Expenses"
         className="w-full h-64 object-cover rounded-xl"
       />
